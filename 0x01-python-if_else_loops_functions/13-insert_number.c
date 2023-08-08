@@ -6,13 +6,13 @@
  * @number: the number to be added
  * Return: the address of the new node or NULL if it failed
  */
-lisint_t *insert_node(listint_t **head, int number)
+listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *loader;
-	lisint_t *new;
+	listint_t *new;
 
 	loader = *head;
-	new - malloc(sizeof(listint_t));
+	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 	{
 		return (NULL);
