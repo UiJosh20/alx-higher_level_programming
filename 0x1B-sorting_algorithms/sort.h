@@ -1,5 +1,7 @@
-#ifdef SORT_H
+#ifndef SORT_H
 #define SORT_H
+#include <stddef.h>
+
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -13,6 +15,28 @@ typedef struct listint_s
     struct listint_s *prev;
     struct listint_s *next;
 } listint_t;
-void bubble_sorting(int *array, size_t size);
 
-#endif
+/**
+ * print_array - Prints an array of integers
+ *
+ * @array: The array to be printed
+ * @size: Number of elements in @array
+ */
+void print_array(const int *array, size_t size);
+
+/**
+ * bubble_sort - Sorts an array of integers in ascending order using Bubble sort
+ * @array: The array to be sorted
+ * @size: Number of elements in the array
+ */
+void bubble_sort(int *array, size_t size);
+
+/**
+ * print_list - Prints a list of integers
+ *
+ * @list: The list to be printed
+ */
+void print_list(const listint_t *list);
+
+#endif /* SORT_H */
+
